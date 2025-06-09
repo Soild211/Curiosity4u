@@ -1,0 +1,80 @@
+/* @import "tailwindcss"; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@config "../../tailwind.config.js";
+
+
+:root {
+  
+  
+
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  /* --color-background: var(--background); */
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+/* @keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+/* Apply Animation to Elements */
+
+
+body {
+
+  /* background: linear-gradient(170deg, #000000 60%, #7F1D1D 100%); */
+  z-index: 0;
+  background: #000;
+  color:white;
+  /* background: linear-gradient(180deg, #000000 60%, #7F1D1D 100%); */
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+.timeline ol {
+  width: 100vw;
+  padding: 250px 0;
+}
+
+.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div::before {
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+/* Ensure smooth transitions */
+[data-scroll-section] {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+iframe {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
