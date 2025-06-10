@@ -7,8 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
-import { ShootingStars } from "./components/shooting-stars";
-import { StarsBackground } from "./components/stars-background";
 import { LatestShorts } from './components/youtube';
 import { MarqueeDemo } from './components/FeedbackCarosel.jsx';
 import Footer from "./components/Footer";
@@ -19,6 +17,7 @@ import Services from './components/Services';
 import { Founders } from './components/Founders';
 import { AboutUs } from './components/AboutUs';
 import { ContactUs } from './components/ContactUs';
+import { IoArrowDownCircleOutline } from "react-icons/io5";
 
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -159,8 +158,7 @@ export default function Home() {
         <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02] text-white">
           <Navbar />
           
-          {/* <ShootingStars />
-          <StarsBackground /> */}
+
           
           <div
             ref={homeRef}
@@ -168,6 +166,9 @@ export default function Home() {
           >
             {/* This is home page */}
             <LatestShorts />
+                  <div className="absolute bottom-16 md:bottom-8 left-1/2 -translate-x-1/2 z-20">
+                    <IoArrowDownCircleOutline className="text-4xl text-white animate-bounce" />
+                  </div>
           </div>
           <div className="flex justify-center items-center">
             <Services array={projects} Heading="Services" />

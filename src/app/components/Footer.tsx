@@ -8,14 +8,12 @@ function Footer() {
     <footer className="p-10 bg-gradient-to-b from-red-950 via-red-950 to-black text-white">
       <div className="flex flex-col items-center">
         <Image 
-          src="/Curiosity logo 2.png" 
+          src="/whiteLogo.png" 
           alt="Curiosity Logo"  
           height={220} 
           width={220} 
         />
         <p className="font-bold mt-4 text-center">
-          Curiosity
-          <br />
           Providing reliable tech since 2024
         </p>
         <p className="mt-2 text-center">

@@ -8,8 +8,8 @@ import { useGSAP } from "@gsap/react";
 
 const menulinks = [
   { path: "/", label: "Home" },
-  { path: "/pravi", label: "Product" },
-  { path: "/about", label: "About" },
+  { path: "/pravi", label: "Pravi" },
+  { path: "/about", label: "AboutUs" },
   { path: "/contact", label: "Contact" },
 ];
 
@@ -57,7 +57,7 @@ const Navbar = () => {
 
   return (
     <div className="menu-container" ref={container}>
-      <div className="menu-bar">
+      <div className="menu-bar px-4">
         <div className="menu-logo text-white">
           <Link href="/">Cusiosity4u</Link>
         </div>
@@ -88,14 +88,14 @@ const Navbar = () => {
           </div>
           <div className="menu-info">
             <div className="menu-info-col-1">
-              <h4>Social Links</h4>
+   
               <a href="#">X </a>
               <a href="#">Instagram </a>
               <a href="#">LinkedIn </a>
             </div>
             <div className="menu-info-col">
-              <p>info@codegrid.com</p>
-              <p>0923 3988 42</p>
+              <p>support@curiosity4u.in</p>
+              <p>+91 95886 54379</p>
             </div>
           </div>
         </div>

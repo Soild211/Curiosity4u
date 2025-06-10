@@ -65,8 +65,7 @@
 
 // export default LatestShorts;
 "use client";
-import { ShootingStars } from "./shooting-stars";
-import { StarsBackground } from "./stars-background";
+
 
 export const LatestShorts = () => {
   const videoId = "GV0FCO1MEPA";
@@ -84,9 +83,7 @@ fs=0&\
 disablekb=1&\
 loop=1&\
 playlist=${videoId}&\
-vq=hd1080&\  // Force 1080p resolution
-highres=1&\  // Request high resolution
-hd=1`;       // HD mode
+`;       // HD mode
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen w-full">

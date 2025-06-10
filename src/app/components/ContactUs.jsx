@@ -59,7 +59,7 @@ export const ContactUs = () => {
                   </div>
                   <div className="flex items-center">
                     <Phone className="text-teal-500 mr-3" size={20} />
-                    <p>+91-123-4456-7890</p>
+                    <p>+91 95886 54379</p>
                   </div>
                   <div className="flex items-center">
                     <Mail className="text-teal-500 mr-3" size={20} />
@@ -92,7 +92,7 @@ export const ContactUs = () => {
                         type="text"
                         name="name"
                         placeholder="Full Name *"
-                        className="w-full outline-none placeholder:text-white "
+                        className="w-full bg-transparent focus:outline-none hover:outline-none  p-1 px-3 rounded-md "
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -119,7 +119,7 @@ export const ContactUs = () => {
                         type="tel"
                         name="phone"
                         placeholder="Phone *"
-                        className="w-full outline-none placeholder:text-white"
+                        className="w-full bg-transparent focus:outline-none hover:outline-none  p-1 px-3 rounded-md"
                         value={formData.phone}
                         onChange={handleChange}
                         required
@@ -146,7 +146,7 @@ export const ContactUs = () => {
                         type="email"
                         name="email"
                         placeholder="Email *"
-                        className=" w-full outline-none placeholder:text-white"
+                        className="w-full bg-transparent focus:outline-none hover:outline-none  p-1 px-3 rounded-md"
                         value={formData.email}
                         onChange={handleChange}
                         required
@@ -172,8 +172,8 @@ export const ContactUs = () => {
                       <textarea
                         name="message"
                         placeholder="Message"
-                        className="w-full outline-none resize-none placeholder:text-white "
-                        rows={3}
+                        className="w-full bg-transparent focus:outline-none hover:outline-none  p-1 px-3 rounded-md"
+                        rows={2}
                         value={formData.message}
                         onChange={handleChange}
                       ></textarea>
@@ -181,7 +181,7 @@ export const ContactUs = () => {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-red-800 text-white py-3 rounded-3xl hover:bg-green-600 transition duration-300"
+                    className="w-full bg-red-800 text-white py-3 rounded-3xl hover:bg-red-950 transition duration-300"
                   >
                     SUBMIT
                   </button>

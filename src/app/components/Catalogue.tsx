@@ -86,12 +86,12 @@ const Catalogue = () => {
                 {item.description}
               </p>
               {item.url && (
-                <div className="mt-4">
+                <div className="mt-4 ">
                   <a
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold bg-gray-700 text-white px-4 py-2 rounded-lg text-sm shadow hover:bg-gray-800"
+                    className="font-bold bg-gray-700 text-white px-4 p-2 rounded-lg text-sm shadow hover:bg-gray-800"
                   >
                     Download PDF
                   </a>

@@ -87,7 +87,7 @@ export const MarqueeDemo = () => {
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 z-10 text-white">
         Reviews
       </h1>
-      <div className="relative flex h-[60vh] w-full max-w-[90vw] flex-col items-center justify-center">
+      <div className="relative flex h-[40vh] lg:h-[60vh] w-full max-w-[90vw] flex-col items-center justify-center">
         <InfiniteMovingCards 
           items={reviews}  
           className="[--duration:20s] bg-transparent w-full md:w-4/5"

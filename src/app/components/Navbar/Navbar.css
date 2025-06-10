@@ -1,4 +1,5 @@
-.menu-bar, .menu-overlay {
+.menu-bar,
+.menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +12,8 @@
     color: white;
 }
 
-.menu-bar a, .menu-open p {
+.menu-bar a,
+.menu-open p {
     /* color: black; */
     font-size: 18px;
     cursor: pointer;
@@ -33,7 +35,7 @@
     width: 100vw;
     height: 100vh;
     padding: 4em;
-      background: linear-gradient(180deg, #000000 60%, #7F1D1D 100%);  
+    background: linear-gradient(180deg, #000000 60%, #7F1D1D 100%);
     z-index: 20;
     display: flex;
     flex-direction: column;
@@ -41,15 +43,19 @@
     align-items: center;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
 }
+
 /*  */
 .menu-copy {
     flex: 4;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
-    align-items: flex-start; /* Align text to the left */
+    justify-content: flex-start;
+    /* Align content to the top */
+    align-items: flex-start;
+    /* Align text to the left */
     padding-top: 2em;
-    padding-left: 2em; /* Add some left padding */
+    padding-left: 2em;
+    /* Add some left padding */
 }
 
 .menu-links {
@@ -58,6 +64,7 @@
     align-items: flex-start;
     /* margin-bottom: 1rem; */
 }
+
 /*  */
 
 .menu-link-item-holder a {
@@ -68,7 +75,7 @@
     line-height: 1.2;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-    text-align: left; 
+    text-align: left;
 }
 
 .menu-link-item-holder a:hover {
@@ -83,7 +90,8 @@
     gap: 15rem;
 }
 
-.menu-info-col-1, .menu-info-col {
+.menu-info-col-1,
+.menu-info-col {
     display: flex;
     flex-direction: column;
 }
@@ -109,24 +117,28 @@
     color: white;
 }
 
-.logo-inside{
-         position: absolute;
+.logo-inside {
+    position: absolute;
     top: 2rem;
-    left: 2rem; 
+    left: 2rem;
 }
 
 .menu-header {
     position: absolute;
-    top: 20px; /* Adjust vertical position */
-    left: 30px; /* Move to the left */
+    top: 20px;
+    /* Adjust vertical position */
+    left: 30px;
+    /* Move to the left */
     font-size: 20px;
     font-weight: bold;
 }
 
 .menu-close {
     position: absolute;
-    top: 20px; /* Adjust vertical position */
-    right: 30px; /* Move to the right */
+    top: 20px;
+    /* Adjust vertical position */
+    right: 30px;
+    /* Move to the right */
     font-size: 18px;
     cursor: pointer;
     font-weight: bold;
@@ -136,4 +148,25 @@
 .menu-container {
     position: relative;
     z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-link-item-holder {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .menu-link-item-holder a {
+        font-size: 32px;
+
+    }
+
+    .menu-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        justify-content: center;
+        gap: 2rem;
+    }
+
 }

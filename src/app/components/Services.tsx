@@ -1,5 +1,5 @@
 'use client'
-import { HoverEffect } from "./ui/card-hover-effect.tsx";
+import { HoverEffect } from "./ui/card-hover-effect";
 
 function CardHoverEffectDemo({ array, Heading }: any) {
   return (
